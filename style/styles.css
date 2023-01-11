@@ -430,19 +430,12 @@ header {
     padding: 0 4px;
 }
 
-.play-movie {
-    position: absolute;
-    bottom: 18rem;
-    right: 10rem;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: var(--main-color);
-    font-size: 24px;
-    animation: animate 2s linear infinite;
+.watch-btn{
+    padding: 0.938rem;
+}
+
+.animate-btn{
+    animation: animate 2.5s linear infinite;
 }
 
 @keyframes animate {
