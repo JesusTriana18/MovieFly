@@ -415,11 +415,11 @@ header {
     padding: 0 4px;
 }
 
-.watch-btn{
+.watch-btn {
     padding: 0.938rem;
 }
 
-.animate-btn{
+.animate-btn {
     animation: animate 2.5s linear infinite;
 }
 
@@ -562,7 +562,7 @@ header {
 
 /*----------------------- RESPONSIVE ------------------------------------------------------------------------------------------*/
 
-@media (max-width: 1170px) {
+@media (max-width: 1280px) {
     .navbar {
         bottom: 0;
         left: 0;
@@ -583,6 +583,16 @@ header {
 
     .copyright {
         margin-bottom: 4rem;
+    }
+
+    .video-box{
+        height: 500px;
+        width: 650px;
+    }
+
+    .trailer{
+        height: 500px;
+        width: 650px;
     }
 }
 
@@ -686,6 +696,20 @@ header {
         bottom: 10rem;
         right: 2rem;
     }
+
+    .video-box{
+        height: 300px;
+        width: 600px;
+    }
+
+    .trailer{
+        height: 400px;
+        width: 600px;
+    }
+
+    .download-links {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 514px) {
@@ -697,7 +721,7 @@ header {
         padding: 2px 14px;
     }
 
-    .heading-title {
+    .heading-title, .home-title {
         font-size: 1rem;
     }
 
@@ -756,6 +780,25 @@ header {
     .movies-content {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    .video-box{
+        height: 200px;
+        width: 300px;
+    }
+
+    .trailer{
+        height: 200px;
+        width: 300px;
+    }
+
+    .cast {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    }
+    
+    .cast-img {
+        width: 100px;
+        height: 130px;
+    }
 }
 
 /* For Small Devices */
@@ -765,27 +808,23 @@ header {
         height: 285px;
     }
 
-    .user-img,
     .watch-btn,
     .bx {
         width: 35px;
         height: 35px;
     }
 
-    .navbar{
+    .navbar {
         justify-content: space-around;
         padding: 8px 0;
     }
 
-    .nav-link, .bx{
+    .nav-link,
+    .bx {
         font-size: 1.35rem;
     }
 
     .about-movie p {
         text-align: justify;
-    }
-
-    .download-links{
-        grid-template-columns: 1fr;
     }
 }
